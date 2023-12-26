@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.backgroundContainer{
+    width: 100%;
+    height: 616px;
+    background-image: url(./Background.jpg);
+    animation: background 12s linear infinite;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+@keyframes background {
+    from{
+        background-position: 100% 0;
+    }
+    to{
+        background-position: -100% 0;
+    }
+    
+}
+
+
+
+
+
+.carConatiner{
+    width: 640px;
+    height: 400px;
+    margin-top: 200px;
+    background-image: url(./car.png);
+    animation: carbody 30s linear infinite;
+}
+
+
+
+#fRim,#bRim{
+    height: 80px;
+    width: 80px;
+    margin-top: 252px;
+    animation: rim 2s linear infinite;
+}
+
+#fRim{
+margin-left: 60px;
+}
+
+#bRim{
+margin-left: 303px;
+}
+
+
+
+
+
+
+@keyframes rim {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+.carConatiner{
+    animation: carbody 30s linear infinite;
+}
+
+
+
+
+@keyframes carbody {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-250%);
+    }
+    
+}
+
+
